@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Week 1: Intro to HTML & CSS</title>
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/night.css">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Printing and PDF exports -->
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section data-background-transition="convex" data-background="#333333">
+      <h2 >Hello</h2>
+      <p style="color:#F8AA00">(DATABASE SYSTEMS CMP2060M)</p>
+    </section>
+    <section data-background-transition="convex" data-background-video="assets/week7/rainingcode.mp4" data-background-video-loop="loop">
+      <h3 >Wayne Christian</h3>
+      <p style="color:#F8AA00">Designer, Developer, Director & Senior Lecturer</p>
+    </section>
+    <section data-menu-title="intro1" data-background="#3f3f3f">
+      <p>A <strong>SQL query </strong>walks into a bar and sees two tables. <br>
+        He walks up to them and asks, "Can I join you?"</p>
+    </section>
+    <section data-menu-title="LAUGH" data-background-transition="convex" data-background-video="assets/week7/LAUGH.mp4" > </section>
+    <section data-menu-title="wayne" class="fragment" data-background="assets/week7/holo1.jpg" data-background-size="cover" data-background-color="#fff">
+      <h4 class="">Wayne Christian</h4>
+      <p class="">My current research focuses on Mixed Reality and augmented Reality(focused around Pedagogy)</p>
+      <p>Office Location  PDW1018 (Interactive Design studio) White building, East Wing, First Floor<br>
+        Support Hours: Monday 11.30 - 1.30<br>
+        Wednesday 12.30 - 4.30</p>
+    </section>
+    <section data-menu-title="waynes loop1" data-background-transition="convex" data-background-video="assets/week7/blast.mp4" data-background-video-loop="loop"> </section>
+    <section data-menu-title="waynes loop" data-background-transition="convex" data-background-video="assets/week7/ade_loop.mp4" data-background-video-loop="loop"> </section>
+    <section data-menu-title="RAF100" data-background-transition="convex" data-background-video="assets/week7/raf100.mp4" > </section>
+    <section data-background="assets/week7/RightCloud-10.jpg" data-background-size="cover" data-background-color="#fff">
+      <h2>Intro to Cloud Storage: SQL as-a-service</h2>
+    </section>
+    <!-- poll-->
+    <section data-menu-title="poll" data-background-color="#222222">
+      <iframe src="https://embed.polleverywhere.com/multiple_choice_polls/c09hajdcOftEUlk?controls=none&short_poll=true" width="100%" height="650" frameBorder="0"></iframe>
+    </section>
+    <!-- poll--> 
+    
+    <!--  <section >
+<h2>Title</h2>
+<p></p>
+</section>-->
+    
+    
+    <section>
+      <h3>Last Week and moving forward<br>
+      </h3>
+      <p class="small">Last week was final week with Bashir on Database Design concepts</p>
+      <p class="small bullet">Module now handed over to Wayne Christian (me!) for weeks 7-9</p>
+      <p class="small bullet">You can seek support from Bashir for your database design groupwork</p>
+      <p class="small bullet">All lectures and workshops now focused on the technical development and implementation of relational databases</p>
+      <p class="small bullet">Please carry out your groupwork for assessment 1 in your own time outside upcoming workshop sessions </p>
+      <p class="small fragment"><strong>Ready to learn about implementing real databases?</strong></p>
+    </section>
+    <section >
+      <h3>The next 3 weeks!</h3>
+      <p class="small bullet red">Week 7: Intro to Cloud Storage (SQL-as-a-service)</p>
+      <p class="small bullet">Week 8: Standard Query Language - Data Definition Language (create database, tables, column etc)</p>
+      <p class="small bullet">Week 9: Standard Query Language - Data Manipulation Language (insert, select, delete etc. with JOIN, UNION and other relational queries)</p>
+    </section>
+    <section data-background-transition="convex" data-background-video="assets/week7/logical.mp4"> </section>
+    <section data-menu-title="next few weeks" data-background-transition="convex" >
+      <h3>Today</h3>
+      <p class="small">We will cover</p>
+      <p class="fragment small bullet">Cloud Computing 101</p>
+      <p class="fragment small bullet">MySQL as-a-Service</p>
+      <p class="fragment small bullet">SQL Cloud Data Platform</p>
+      <p class="fragment small bullet">Google Cloud Platform Demo</p>
+    </section>
+    <section data-background="assets/week7/RightCloud-10.jpg" data-background-size="cover" data-background-color="#fff">
+      <h2>Cloud Computing 101</h2>
+    </section>
+    <section data-background-transition="convex" data-background-video="assets/week7/spoof.mp4"> </section>
+    <section data-menu-title="expectations" data-background="#3f3f3f">
+      <h3>So what is the cloud</h3>
+      <p>“An approach to computing that’s about internet scale and connecting to a variety of devices and endpoints”</p>
+      <p class="fragment small">Anyone else?</p>
+      <pre>
+<code class="liveCoding xml" contenteditable style="font-size: 60%; line-height: normal">Our expectations are:
+
+
+</code></pre>
+    </section>
+    <section>
+      <p class="small">Cloud computing is shared pools of configurable computer system resources and higher-level services that can be rapidly provisioned with minimal management effort, often over the Internet. Cloud computing relies on sharing of resources to achieve coherence and economies of scale, similar to a public utility</p>
+    </section>
+    <section>
+      <h3>Why Databases in the Cloud?</h3>
+      <p class="small fragment">Rapidly setup environments to drive business priorities</p>
+      <p class="small fragment">Scale to meet peak demands, robust redundancy</p>
+      <p class="small fragment">Increase daily activities, efficiency and reduced cost</p>
+    </section>
+    <section>
+      <h3>Why Databases in the Cloud?</h3>
+      <p class="small fragment"><strong>PaaS:</strong> you build it, the cloud runs it</p>
+      <p class="small fragment"><strong>IaaS:</strong> interoperability, runs on any cloud provider, or locally</p>
+      <p class="small fragment">Automatic O/S patching (updates)</p>
+      <p class="small fragment">Elasticity and scale</p>
+      <p class="small fragment">Utility billing approach (only pay for what you use)</p>
+      <p class="small fragment">Redundancy – compute and storage, geo-located etc.</p>
+      <p class="small fragment">Focus on ensuring your data is available and secure, without worrying about server infrastructure</p>
+    </section>
+    <section>
+      <h3>Cloud Computing as a Utility</h3>
+      <p class="small fragment">The idea of Cloud Computing is to turn computing power into a utility like electricity or water </p>
+      <p class="small fragment">You only pay for the computing resource that is deployed on your behalf, which could be billed by the second, minute, or hour </p>
+      <p class="small fragment">If you need more compute power you just buy it, you can focus on making the service, not deploying it </p>
+      <p class="small fragment">The term elastic computing is used frequently to describe the above </p>
+      <p class="small fragment">You can automate resource scaling if demand goes up, as well as down – makes sense?? </p>
+    </section>
+    <section data-background="assets/week7/patterns.png" data-background-size="contain" data-background-color="#fff">
+      <h2>Cloud Computing Patterns</h2>
+    </section>
+    
+    <section data-background="assets/week7/cc11.png" data-background-size="contain" data-background-color="#fff">
+      <h2>Cloud Computing Patterns</h2>
+    </section>
+    
+     <section data-background="assets/week7/cc12.png" data-background-size="contain" data-background-color="#fff">
+      <h2>Cloud Computing</h2>
+    </section>
+    
+     <section data-background="assets/week7/cc13.png" data-background-size="contain" data-background-color="#fff">
+      <h2>Cloud Computing Providers</h2>
+    </section>
+    <section data-background="assets/week7/benefits.png" data-background-size="contain" data-background-color="#fff">
+      <h2>Cloud Computing Benefits</h2>
+    </section>
+    
+    <section data-background="" data-background-size="contain" data-background-color="">
+      <h2>Cloud Computing Benefits</h2>
+		<p class="fragment small"><strong>Datacentres!</strong></p>
+<p class="fragment small">Collection of servers where applications/data are hosted</p>
+<p class="fragment small">A Datacentre refers to a single geographical location in which servers are housed</p>
+<p class="fragment small">Hundreds of servers to a room/crate – very expensive and very hot! </p>
+<p class="fragment small">A move to rack mounted servers reduces costs and required space, with blade servers and significant virtualisation</p>
+<p class="fragment small">Datacentres are enormous, with security tighter than airports</p>
+
+    </section>
+    
+    <section data-background="assets/week7/cc15.png" data-background-size="cover" data-background-color="#fff">
+      <h2>Azure SQL Datacentre</h2>
+    </section>
+    
+     <section data-background="assets/week7/cc17.png" data-background-size="cover" data-background-color="#fff">
+      <h2>Google’s ‘floating barge’ Data Centres</h2>
+    </section>
+    
+    <section data-background="assets/week7/cc19.png" data-background-size="contain" data-background-color="#fff">
+      <h2 style="color: #222">Architecture for a Database System</h2>
+    </section>
+    
+    <section data-background="" data-background-size="contain" data-background-color="#fff">
+      <h2>Client-server model</h2>
+<p class="fragment small bullet">The client-server model is an architecture that distributes applications between servers such as Web Servers / Database Servers and client computers such as Windows/Linux and mobile devices
+</p>
+<p class="small">A Datacentre refers to a single geographical location in which servers are housed</p>
+<p class="small">Some examples of servers that clients can communicate with over internet:</p>
+<p class="fragment small">File server</p>
+<p class="fragment small">Print server</p>
+<p class="fragment small">Database server</p>
+<p class="fragment small">Network controller</p>
+<p class="fragment small">Messaging server</p>
+		<p class="fragment small">Web server</p>
+    </section>
+    
+    <section data-background="assets/week7/cc22.png" data-background-size="contain" data-background-color="#fff">
+      <h2>Cloud Computing Benefits</h2>
+    </section>
+    
+     <section data-background-size="contain" data-background-color="crimson">
+      <h2>Cloud covers your *aaS<br>
+…as-a-service
+</h2>
+    </section>
+    
+    <section data-background="assets/week7/cc25.png" data-background-size="contain" data-background-color="#fff">
+  
+    </section>
+    
+    <section data-background="assets/week7/cc26.png" data-background-size="contain" data-background-color="#fff">
+  
+    </section>
+	  
+    <section  data-background-size="contain" data-background-color="">
+    <h3>Why MySQL?</h3>
+		<p class="small">Most used Open source DB - second place overall after Oracle (but almost equal) </p>
+		<p class="small">Since 1995</p>
+<p class="small">Currently at version 5.7 stable</p>
+<p class="small">Several forks - MariaDB, Percona</p>
+<p class="small">Several storage engines, most used is InnoDB</p>
+<p class="small">You will be using it!</p>
+		<p class="small fragment">Just not in the traditional sense…..</p>
+    </section>
+    
+	  <section data-background="assets/week7/cc27.png" data-background-size="contain" data-background-color="#fff"></section>
+     <section >
+     <div class="half">
+		 <p class="small ">You want to use MySQL PaaS for your Wordpress site</p>
+<p class="small ">Deploy new MySQL PaaS database instance for new Wordpress site via cloud management GUI (few clicks!)</p>
+<p class="small ">Developer sees only one database instance – the Master DB</p>
+<p class="small ">However, there are at least two Slave copies of the Master on other cloud servers, possibly in other Datacentres for extra redundancy</p>
+<p class="small ">If Master DB goes down, one of the Slave copies becomes the new Master DB, and a new Slave copy is deployed to maintain a standard level of redundancy</p>
+		 </div>
+       <div class="half">
+       <img src="assets/week7/cc28.png"/>
+		 </div>
+
+     </section>
+     
+		 <section data-background="assets/week7/cc30.png" data-background-size="contain" data-background-color="">
+			 <p>Cloud Computing Model for MySQL</p>
+		 </section>
+		 <section data-background="assets/week7/cc31.png" data-background-size="contain" data-background-color="#fff"></section>
+     <section data-background="assets/week7/RightCloud-10.jpg" data-background-size="cover" data-background-color="#fff">
+      <h2>MySQL Cloud Data Platform
+</h2>
+    </section>
+    
+    
+    <section  data-background-size="contain" >
+		<h3>Cloud Data Platforms</h3>
+		<p class="small ">By data platform we mean the high-level database tools/services that manage data<br>
+			By data storage we mean how the data is stored, for example:- </p>
+		<p class="small bullet">Relational / non-relational</p>
+		<p class="small bullet">Structured / unstructured</p>
+		<p class="small bullet">Blob storage</p>
+		<p class="small bullet">File storage</p>
+<p class="small ">This lecture’s main focus has been on the MySQL data platform as-a-service 
+This is a good starting point in understanding how a traditional database platform can be delivered as a cloud service</p>
+
+    </section>
+    
+	  <section data-background="assets/week7/cc34.png" data-background-size="contain" data-background-color="#fff"></section>
+    
+    <section  data-background-size="contain" >
+		<h3>Cloud Data Platforms</h3>
+		<p class="small bullet">MySQL as-a-Service generally means it will also be offered as a High-Availability (HA) service with  guaranteed uptime and redundancy</p>
+		<p class="small bullet">We briefly touched on MySQL HA in earlier slides with the earlier master-slave-slave database diagram</p>
+		<p class="small bullet">Will be a dedicated lecture on HA database services in week 10</p>
+<p class="small bullet">Main Cloud providers offering SQL HA:<br>
+	Google HA: <a href="https://cloud.google.com/sql/docs/mysql/high-availability">https://cloud.google.com/sql/docs/mysql/high-availability</a><br>
+	Amazon HA: <a href="https://aws.amazon.com/rds/ha/">https://aws.amazon.com/rds/ha/</a> </p>
+
+    </section>
+    
+     <section  data-background-size="contain" >
+		<h3>Deploying a cloud-based MySQL database</h3>
+		<p class="small bullet">You now know that you can deploy your database to the cloud via PaaS or IaaS service models</p>
+		 <p class="small bullet">You will use the Google Cloud Platform to deploy an instance of a LAMP stack called Bitnami</p>
+<p class="small bullet">Bitnami will run as a micro virtual machine (IaaS f1 size) instance on Google cloud, and contain all the tools you need</p>
+<p class="small bullet">Includes an instance of MySQL server and PhpMyAdmin to manage your database(s) via a GUI</p>
+
+    </section>
+    <section  data-background-size="contain" >
+		<h3>Deploying a cloud-based MySQL database</h3>
+		<p class="small">Before you can work with the Google Cloud Platform I need to give access to your Gmail address for your unique cloud project space
+			Every student will have their own instance of Bitnami to work with - protect your credentials!</p>
+<p class="small">If you haven’t responded to my emails about this then please do so asap BEFORE THE WORKSHOP
+If you don’t you can’t do the workshops. I can only create access to your cloud project with your valid Gmail address and cannot do this during workshops – its time consuming</p>
+		<p class="small"><strong>It’s your responsibility to engage with this process before the workshops!</strong> </p>
+
+    </section>
+    <section  data-background-size="contain" data-background-color="#fff">
+		<h3>Google Cloud Platform</h3>
+		<p>Quick Demo</p><a href="https://console.cloud.google.com/" target="_blank">https://console.cloud.google.com</a>
+    </section>
+    
+    
+    <section data-background="assets/week7/rules.png" data-background-size="500" data-background-color="#fff">
+    
+    </section>
+    
+    <section data-background="assets/week7/cc40.png" data-background-size="cover" data-background-color="#fff">
+    
+    </section>
+        <section data-menu-title="bitmani" data-background-transition="convex" data-background-video="assets/week7/bitnami.mp4" > </section>
+    
+    <section  >
+      <h2>Workshop A7 – Creating and deploying the Bitnami LAMP stack for running MySQL databases</h2>
+    </section>
+    
+    
+     <section data-background="" data-background-size="cover" data-background-color="#fff">
+		 <h2>Workshop A7</h2>
+		 <p>Creating and deploying the Bitnami LAMP stack for running MySQL databases</p>
+    </section>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="lib/js/head.min.js"></script> 
+<script src="js/reveal.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://code.highcharts.com/highcharts.js"></script> 
+<script src="https://code.highcharts.com/highcharts-more.js"></script> 
+<script src="https://code.highcharts.com/modules/solid-gauge.js"></script> 
+<script src="js/themes/mypbtheme.js"></script> 
+<script src="js/jquery.animateNumber.min.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+</body>
+</html>
