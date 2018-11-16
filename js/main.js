@@ -173,7 +173,7 @@ Highcharts.chart('container', {
 
 Reveal.addEventListener('salary', function () {
 	console.log('stats called!');
-	animatenum(46, '#decimals', 2);
+	animatenum(19, '#decimals', 0);
 });
 
 var animatenum = function (num, obj, dec) {
