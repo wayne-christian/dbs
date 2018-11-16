@@ -5,10 +5,10 @@
 var backcolors = ['red', 'green', 'blue', 'orange', 'yellow'];
 var sections ='';
 		
-		for(i = 0; i < 89; i++){
+		//for(i = 0; i < 89; i++){
 			//console.log(i);
-			sections += '<section data-menu-title="slide'+i+'" data-background="assets/week0assets/intro'+i+'.jpg" data-background-size="900px" data-background-color="#333333"></section>'
-		}
+			//sections += '<section data-menu-title="slide'+i+'" data-background="assets/week0assets/intro'+i+'.jpg" data-background-size="900px" data-background-color="#333333"></section>'
+		//}
 
 
 $(document).ready(function () {
@@ -158,11 +158,11 @@ Highcharts.chart('container', {
         name: 'types',
         colorByPoint: true,
         data: [{
-            name: 'Good Students (147)',
-            y: 147
+            name: 'Prudent Students (84)',
+            y: 184
         }, {
-            name: 'I struggle with simple instructions (66)',
-            y: 66,
+            name: 'I do not need extra qualifications - I have a good chance against the 27,000 com sci graduates',
+            y: 96,
             sliced: true,
             selected: true
         }]
@@ -170,6 +170,36 @@ Highcharts.chart('container', {
 });
 	
 });
+
+Reveal.addEventListener('salary', function () {
+	console.log('stats called!');
+	animatenum(46, '#decimals', 2);
+});
+
+var animatenum = function (num, obj, dec) {
+	var decimal_places = dec;
+	var decimal_factor = decimal_places === 0 ? 1 : Math.pow(10, decimal_places);
+	$(obj).animateNumber({
+				number: num * decimal_factor,
+
+				numberStep: function (now, tween) {
+					var floored_number = Math.floor(now) / decimal_factor,
+						target = $(tween.elem);
+
+					if (decimal_places > 0) {
+						// force decimal places even if they are 0
+						floored_number = floored_number.toFixed(decimal_places);
+
+						// replace '.' separator with ','
+						floored_number = floored_number.toString().replace('.', ',');
+					}
+
+					target.text(floored_number);
+				}
+			},
+			3000
+		);
+};
 
 
 
